@@ -3,6 +3,9 @@ import "./styles/globals.css";
 // Components
 export * from "./components";
 
+// Hooks
+export * from "./hooks/public";
+
 // Utils
 export * from "./utils/public";
 
