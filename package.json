@@ -1,0 +1,9 @@
+{
+    "name": "base-ui-kit",
+    "version": "0.0.1",
+    "private": true,
+    "workspaces": [
+        "ui",
+        "app"
+    ]
+}
