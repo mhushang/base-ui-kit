@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@base-ui-kit/ui": "workspace:*",
+    "@base-ui-kit/ui": "*",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
