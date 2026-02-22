@@ -12,6 +12,11 @@ export default defineConfig({
     // Ensure single React instance (critical for hooks)
     dedupe: ["react", "react-dom"],
   },
+  css: {
+    modules: {
+      localsConvention: "camelCase",
+    },
+  },
   server: {
     port: 3000,
     fs: {
