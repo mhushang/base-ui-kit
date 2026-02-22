@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 0;
+}
+
+/* Horizontal padding */
+.sm {
+  padding-left: var(--spacing-3);
+  padding-right: var(--spacing-3);
+}
+
+.md {
+  padding-left: var(--spacing-4);
+  padding-right: var(--spacing-4);
+}
+
+.lg {
+  padding-left: var(--spacing-6);
+  padding-right: var(--spacing-6);
+}
+
+/* Max widths */
+.max_sm {
+  max-width: 40rem; /* 640px */
+}
+
+.max_md {
+  max-width: 48rem; /* 768px */
+}
+
+.max_lg {
+  max-width: 64rem; /* 1024px */
+}
+
+.max_xl {
+  max-width: 80rem; /* 1280px */
+}
+
+.max_2xl {
+  max-width: 96rem; /* 1536px */
+}
+
+.max_full {
+  max-width: none;
+}
+
