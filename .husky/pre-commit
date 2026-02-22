@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+set -e
+
+npm -w ui run lint
+npm -w ui run test:run
+
+npm -w app run lint
+

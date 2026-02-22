@@ -2,8 +2,18 @@
     "name": "base-ui-kit",
     "version": "0.0.1",
     "private": true,
+    "scripts": {
+        "prepare": "husky install",
+        "lint": "npm -w ui run lint && npm -w app run lint",
+        "test": "npm -w ui run test:run",
+        "build": "npm -w ui run build && npm -w app run build",
+        "verify": "npm run lint && npm run test && npm run build"
+    },
     "workspaces": [
         "ui",
         "app"
-    ]
+    ],
+    "devDependencies": {
+        "husky": "^9.1.7"
+    }
 }

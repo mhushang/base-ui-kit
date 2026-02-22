@@ -10,7 +10,7 @@ import { dirname } from 'node:path'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig([
-  globalIgnores(['dist', 'storybook-static']),
+  globalIgnores(['dist', 'storybook-static', 'coverage']),
   {
     files: ['**/*.{ts,tsx}'],
     extends: [

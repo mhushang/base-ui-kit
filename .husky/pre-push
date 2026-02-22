@@ -1,0 +1,11 @@
+#!/usr/bin/env sh
+set -e
+
+# Full verification before pushing
+npm -w ui run lint
+npm -w ui run test:run
+npm -w ui run build
+
+npm -w app run lint
+npm -w app run build
+
