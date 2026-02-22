@@ -19,7 +19,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@base-ui-kit/ui": ["../ui/src/index.ts"],
-      "@base-ui-kit/ui/*": ["../ui/src/*"]
+      "@base-ui-kit/ui/*": ["../ui/src/*"],
+      "@base-ui-kit/ui/styles": ["../ui/src/styles/globals.css"]
     },
 
     /* Linting */

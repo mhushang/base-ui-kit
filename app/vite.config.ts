@@ -7,6 +7,10 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": resolve(__dirname, "./src"),
+      "@base-ui-kit/ui/styles": resolve(
+        __dirname,
+        "../ui/src/styles/globals.css"
+      ),
       "@base-ui-kit/ui": resolve(__dirname, "../ui/src/index.ts"),
     },
     // Ensure single React instance (critical for hooks)
