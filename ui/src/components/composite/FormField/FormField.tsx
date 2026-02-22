@@ -25,7 +25,9 @@ export const FormField = ({
     ? cloneElement(children, {
         id,
         "aria-describedby":
-          [error && errorId, hint && hintId].filter(Boolean).join(" ") ||
+          [error && errorId, !error && hint && hintId]
+            .filter(Boolean)
+            .join(" ") ||
           undefined,
         "aria-invalid": !!error || undefined,
         "aria-required": required || undefined,
