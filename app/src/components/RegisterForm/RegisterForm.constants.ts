@@ -21,6 +21,8 @@ export const registerSchema = z
 
     confirmPassword: z.string().min(1, "Please confirm your password"),
 
+    country: z.string().min(1, "Country is required"),
+
     acceptTerms: z
       .boolean()
       .refine(

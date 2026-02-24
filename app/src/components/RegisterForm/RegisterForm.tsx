@@ -5,6 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import {
   Button,
   Input,
+  Select,
   Checkbox,
   FormField,
   Card,
@@ -30,6 +31,9 @@ export const RegisterForm = () => {
   } = useForm<RegisterFormValues>({
     resolver: zodResolver(registerSchema),
     mode: "onBlur",
+    defaultValues: {
+      country: "",
+    },
   });
 
   const onSubmit = async (values: RegisterFormValues) => {
@@ -159,6 +163,17 @@ export const RegisterForm = () => {
               placeholder="••••••••"
               autoComplete="new-password"
             />
+          </FormField>
+
+          <FormField label="Country" required error={errors.country?.message}>
+            <Select {...register("country")} defaultValue="">
+              <option value="" disabled>
+                Select a country…
+              </option>
+              <option value="us">United States</option>
+              <option value="ca">Canada</option>
+              <option value="uk">United Kingdom</option>
+            </Select>
           </FormField>
 
           <FormField error={errors.acceptTerms?.message}>

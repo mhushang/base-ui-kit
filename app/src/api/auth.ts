@@ -15,7 +15,7 @@ const client = axios.create({
 
 export type RegisterPayload = Omit<
   RegisterFormValues,
-  "confirmPassword" | "acceptTerms"
+  "confirmPassword" | "acceptTerms" | "country"
 >;
 
 export async function registerUser(data: RegisterPayload): Promise<void> {
